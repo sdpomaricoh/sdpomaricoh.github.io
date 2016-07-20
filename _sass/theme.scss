@@ -1,0 +1,91 @@
+.page-title h2{
+	color: $indigo;
+}
+
+.social-icons a:hover{
+	color:#FFFFFF !important;
+ 	border: solid 1px  $indigo;
+}
+ul.menu li a:hover{
+	color:#FFFFFF !important;
+}
+
+ul.menu li .selected{
+	color: $indigo;
+}
+
+.skill-list .progress{
+    border: 1px solid  $indigo;
+}
+
+.skill-list .progress .percentage {
+    background-color:  $indigo;
+}
+
+.services .service i{
+    background:  rgba(48,63,159,1);
+}
+
+.rounded-icon i{
+	background: $indigo;
+}
+
+.info-title:after {
+    background: $indigo;
+}
+
+.info-date{
+    color: $indigo;
+}
+
+.select-cat{
+	color: $indigo !important;
+}
+
+.blog-post .post-info{
+	color: $indigo;
+}
+
+.but-big{
+	background-color:  $indigo;
+}
+
+.social-icons a:hover{
+	color: $indigo;
+ 	border: solid 1px  $indigo;
+}
+
+ul.menu li a:hover{
+	color:#303F9F;
+}
+
+ul.menu li .selected{
+	color:#303F9F;
+}
+
+.date a {
+	color:#303F9F;
+}
+
+a.reply {
+	color:#303F9F;
+}
+
+.hvr-bounce-to-right:before{
+	  background: #303F9F;
+}
+
+.hvr-radial-out{
+	background-color: #FFFFFF;
+}
+
+.hvr-radial-out:before{
+	background:  $indigo;
+}
+
+a{
+	color: #7F7F7F;
+	&:hover{
+		color: $indigo;
+	}
+}
