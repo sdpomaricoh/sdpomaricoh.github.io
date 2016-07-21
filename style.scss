@@ -782,6 +782,9 @@ ul.skill-list{
 	.services .service i{
 		float:none;
 	}
+    .indigo-button{
+        font-size: 12px;
+    }
 }
 
 
@@ -822,6 +825,22 @@ ul.skill-list{
 	.user-img{
 		display:none;
 	}
+
+    .portfolio_items .single_item img{
+        max-width: 300px;
+    }
+
+    .work-overlay{
+        padding: 10px;
+    }
+
+    .portfolio_items{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .single_item{
+        padding: 0;
+    }
 }
 
 // 404 styles
