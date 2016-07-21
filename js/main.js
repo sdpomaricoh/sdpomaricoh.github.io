@@ -116,10 +116,10 @@ $(document).ready( function() {
         var map = new google.maps.Map(document.getElementById("map"), myOptions);
         var marker = new google.maps.Marker({
             map: map,
-            position: new google.maps.LatLng(6.208892, -75.5776498) //change the coordinates
+            position: new google.maps.LatLng(6.2735012,-75.5814543) //change the coordinates
         });
         var infowindow = new google.maps.InfoWindow({
-            content: "<b>Vivero del Sofware</b><br/>Cl. 7 # 48111 <br/> Medellín, Antioquia"  //add your address
+            content: "<b>Cl. 73 #67-43 </b><br/> Medellín, Antioquia"  //add your address
         });
         google.maps.event.addListener(marker, "click", function () {
             infowindow.open(map, marker);
