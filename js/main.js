@@ -1,5 +1,7 @@
-// WOW.js initialize
-new WOW().init();
+$(document).ready(function(){
+    // WOW.js initialize
+    new WOW().init();
+});
 
 //fix bugs on main menu
 
