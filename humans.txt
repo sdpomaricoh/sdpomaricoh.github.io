@@ -1,6 +1,6 @@
 /* TEAM */
 Web Developer: Sergio Pomárico Hernández
-Site: http://www.wagglio.co/
+Site: http://www.sdpomaricoh.github.io/
 Twitter: [at]sergio_pomarico
 Location: Medellí­n, Antioquia, Colombia.
 

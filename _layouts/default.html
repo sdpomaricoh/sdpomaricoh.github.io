@@ -32,7 +32,7 @@
 
 <body>
     {% include preloader.html %}
-    <div id="wrapper" itemscope itemtype="http://schema.org/Person">
+    <div id="wrapper">
         <div class="container">
             <div class="row">
                 {% include profile-info.html %}
@@ -61,14 +61,21 @@
     <!-- configurations of the site  -->
     <script src="{{ site.baseurl }}/js/main.js"></script>
 	<script type="application/ld+json">
-		{
-			"@context" : "http://schema.org",
-			"@type" : "LocalBusiness",
-			"name" : "Sergio Pomárico Hernández",
-			"image" : "https://sdpomaricoh.github.io/img/profile-img.jpg",
-			"email" : "sergiodavid21@gmail.com",
-			"url" : "https://github.com/sdpomaricoh"
-		}
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "url": "https://sdpomaricoh.github.io/",
+      "name" : "Sergio Pomárico Hernández",
+      "image" : "https://sdpomaricoh.github.io/img/profile-img.jpg",
+      "telephone": "+573015660438",
+      "address": "Calle 73 # 67 - 43",
+      "contactPoint": [
+        { "@type": "ContactPoint",
+          "telephone": "+573015660438",
+          "contactType": "customer service"
+        }
+      ]
+    }
 	</script>
   </body>
 </html>
