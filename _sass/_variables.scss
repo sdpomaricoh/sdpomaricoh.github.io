@@ -16,10 +16,10 @@ $white: #fff;
 // Font stacks
 $lato: 'Lato', sans-serif;
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import "libs/lato";
+@import "libs/font-awesome";
+@import "libs/ionicons";
+@import "libs/bootstrap";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css');
