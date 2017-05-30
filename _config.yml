@@ -6,7 +6,7 @@
 name: Sergio Pomárico
 
 # Short bio or description (displayed in the header)
-description: Soy desarrollador Web full stack en tecnologías JavaScript
+description: Soy desarrollador Web Full Stack en tecnologías JavaScript en la Ciudad de Medellín, Realizo desarrollos en Laravel, NodeJS, Angular y Wordpress.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: img/profile-img.jpg
@@ -49,12 +49,13 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - octopress-minify-html
 
 # Exclude these files from your production _site
 exclude:
@@ -63,3 +64,5 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+minify_html: true
+
