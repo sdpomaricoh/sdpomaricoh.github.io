@@ -9,21 +9,6 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- Google Web fonts -->
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,700,900'>
-    <!-- Fontawesome icons css -->
-    <link rel='stylesheet' type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <!-- Magnific Popup CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- Ionicons CSS-->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Hover CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -38,9 +23,10 @@
                     <article class="error">
                         <h1>{{ page.title }}</h1>
                         <p>
-                            {{ content }}
+                            Lo sentimos, no podemos encontrar esa página que estás buscando.
+                            <img src="{{ site.baseurl }}/img/404.png" style="width: 400px;"/>
                         </p>
-                        <a href="../{{ site.baseurl }}" class="read-more">Back to Home</a>
+                        <a href="../{{ site.baseurl }}" class="read-more">Volver al inicio</a>
                     </article>
                 </div>
             </div>

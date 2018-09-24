@@ -72,12 +72,15 @@ ul{
 /*preloader*/
 
 #preloader {
+    align-items: center;
     background-color: $indigo;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left:0;
     position: fixed;
     top:0;
-    left:0;
     width: 100%;
-    height: 100%;
     z-index: 99;
 }
 
@@ -238,7 +241,7 @@ ul.menu{
     li{
         list-style:none;
         float:left;
-        width:20%;
+        width:25%;
         text-align:center;
         border-right:1px dashed #cccccc;
         &:last-child{
@@ -623,59 +626,6 @@ ul.skill-list{
     }
 }
 
-/*------------------------ 8 Blog Posts Page ------------------------*/
-
-.blog-post{
-    .post-image img{
-        width:100%;
-        margin-top: 2em;
-    }
-    .post-title h1{
-        font-size:20px;
-        line-height:26px;
-        font-weight:bold;
-        margin-top:24px;
-    }
-    .post-info{
-    	font-size:14px;
-    	line-height:24px;
-    	font-weight:600;
-    	padding:6px 0;
-    }
-    p{
-    	font-size:14px;
-    	line-height:24px;
-    	color:#7F7F7F;
-    	font-weight:400;
-    }
-}
-
-.read-more{
-    position: relative;
-    display: inline-block;
-    height: 48px;
-    padding: 12px 30px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    background: #3F51B5;
-    border: 0;
-    border-bottom: 2px solid #303F9F;
-    cursor: pointer;
-    -webkit-box-shadow: inset 0 -2px #303F9F;
-    box-shadow: inset 0 -2px #303F9F;
-    &:active{
-        top: 1px;
-        outline: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    &:hover{
-        color: #FFF;
-    }
-}
-
 /*------------------------ 9 Contact Page ------------------------*/
 
 .form-input{
@@ -854,6 +804,27 @@ ul.skill-list{
         font-size: 16px;
         color: #7F7F7F;
     }
+}
+
+.read-more{
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    padding: 12px 30px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    background: #3F51B5;
+    border: 0;
+    border-bottom: 2px solid #303F9F;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #303F9F;
+    box-shadow: inset 0 -2px #303F9F;
+}
+
+.read-more:hover{
+    color: white;
 }
 
 //
