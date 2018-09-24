@@ -22,6 +22,12 @@ $(window).load(function() {
     $('#preloader').delay(900).fadeOut('slow');
 });
 
+$(document).ready(function() {
+    var date = new Date();
+    var year = date.getFullYear();
+    $('#year').text(year);
+});
+
 $("#apps").animate({
     width: "60%"
 }, 3000)
