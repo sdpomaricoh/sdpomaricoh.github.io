@@ -10,9 +10,9 @@ Name: Malvina Hernández Lobo
 
 /* SITE */
 
-Last update: 2016/07/4
+Last update: 2020/01/20
 Standards: HTML5, CSS3, JavaScript
 
-Components: Github, jQuery, Bootstrap
+Components: Github, Bootstrap
 
 Software: Atom
