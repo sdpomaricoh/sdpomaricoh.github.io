@@ -16,10 +16,5 @@ $white: #fff;
 // Font stacks
 $lato: 'Lato', sans-serif;
 
-@import "libs/lato";
-@import "libs/font-awesome";
-@import "libs/ionicons";
-@import "libs/bootstrap";
-@import "libs/magnific-popup";
-@import "libs/animate";
-@import "libs/hover";
+// Shadow
+$shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);

@@ -1,13 +1,13 @@
-.page-title h2{
+.page-title h2 {
 	color: $indigo;
 }
 
 .social-icons a:hover{
-	color:#FFFFFF !important;
- 	border: solid 1px  $indigo;
+	color:#FFFFFF;
+ 	border: solid 1px $indigo;
 }
 ul.menu li a:hover{
-	color:#FFFFFF !important;
+	color:#FFFFFF ;
 }
 
 ul.menu li .selected{
@@ -15,72 +15,47 @@ ul.menu li .selected{
 }
 
 .skill-list .progress{
-    border: 1px solid  $indigo;
+  border: 1px solid  $indigo;
 }
 
 .skill-list .progress .percentage {
-    background-color:  $indigo;
+  background-color:  $indigo;
 }
 
 .services .service i{
-    background:  rgba(48,63,159,1);
+  background: $indigo;
 }
 
-.rounded-icon i{
+.rounded-icon {
 	background: $indigo;
 }
 
 .info-title:after {
-    background: $indigo;
+  background: $indigo;
 }
 
 .info-date{
-    color: $indigo;
+  color: $indigo;
 }
 
 .select-cat{
 	color: $indigo !important;
 }
 
-.blog-post .post-info{
-	color: $indigo;
-}
-
 .but-big{
 	background-color:  $indigo;
 }
 
-.social-icons a:hover{
-	color: $indigo;
- 	border: solid 1px  $indigo;
-}
-
-ul.menu li a:hover{
-	color:#303F9F;
-}
-
 ul.menu li .selected{
-	color:#303F9F;
+	color: $indigo;
 }
 
 .date a {
-	color:#303F9F;
+	color:$indigo;
 }
 
 a.reply {
-	color:#303F9F;
-}
-
-.hvr-bounce-to-right:before{
-	  background: #303F9F;
-}
-
-.hvr-radial-out{
-	background-color: #FFFFFF;
-}
-
-.hvr-radial-out:before{
-	background:  $indigo;
+	color:$indigo;
 }
 
 a{

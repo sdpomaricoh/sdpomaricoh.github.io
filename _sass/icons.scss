@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?53no5y') format('truetype'),
-    url('fonts/icons.woff?53no5y') format('woff'),
-    url('fonts/icons.svg?53no5y#icons') format('svg');
+    url('fonts/icons.ttf?xjejo5') format('truetype'),
+    url('fonts/icons.woff?xjejo5') format('woff'),
+    url('fonts/icons.svg?xjejo5#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cup:before {
+  content: "\e901";
+}
+.globe:before {
+  content: "\e904";
+}
+.luggage:before {
+  content: "\e905";
+}
+.smartphone:before {
+  content: "\e906";
+}
 .blog:before {
   content: "\e913";
 }
@@ -36,23 +48,11 @@
 .react:before {
   content: "\e900";
 }
-.html5:before {
-  content: "\e901";
-}
 .linkedin:before {
   content: "\e902";
 }
 .whatsapp:before {
   content: "\e903";
-}
-.wordpress:before {
-  content: "\e904";
-}
-.css3:before {
-  content: "\e905";
-}
-.docker:before {
-  content: "\e906";
 }
 .facebook:before {
   content: "\e907";
@@ -60,17 +60,8 @@
 .github:before {
   content: "\e908";
 }
-.computer:before {
-  content: "\e90a";
-}
 .gmail:before {
   content: "\e90b";
-}
-.mail:before {
-  content: "\e90c";
-}
-.search:before {
-  content: "\e90d";
 }
 .twitter:before {
   content: "\e90e";
