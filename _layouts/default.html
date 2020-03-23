@@ -3,59 +3,38 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>{% if page.title %}{{ page.title }} {% endif %}{{ site.name }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
-
-	<meta name="google-site-verification" content="JH2f5XQiVwnpCeeZJ0VAl4sSYMQnDuA15mSjOSmr8EQ" />
+<head>
+  <title>{% if page.title %}{{ page.title }} {% endif %}{{ site.name }}</title>
+  {% include meta.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <meta name="google-site-verification" content="JH2f5XQiVwnpCeeZJ0VAl4sSYMQnDuA15mSjOSmr8EQ" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon.png">
 </head>
 
 <body>
-    {% include preloader.html %}
-    <div id="wrapper">
-        <div class="container">
-            <div class="row">
-                {% include profile-info.html %}
-                <div id="tab-container" class="col-md-9">
-                    {% include menu.html %}
-                    {{ content }}
-                </div>
-            </div>
-        </div>
+  {% include preloader.html %}
+  <main>
+    {% include profile-info.html %}
+    <div class="tab-container">
+      {% include menu.html %}
+      {{ content }}
     </div>
-    {% include analytics.html %}
-    <!-- Jquery  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </main>
+  {% include analytics.html %}
 
-    <!--  Magnific Popup JS  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- Jquery Easytabs-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
-    <!-- Wow JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- Jquery Isotope -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    
-    <!-- configurations of the site  -->
-    <script src="{{ site.baseurl }}/js/main.js"></script>
+  <!-- configurations of the site  -->
+  <script src="{{ site.baseurl }}/js/main.js"></script>
 	<script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "LocalBusiness",
-      "url": "https://sdpomaricoh.github.io/",
+      "url": "https://sergiopomarico.com/",
       "name" : "Sergio Pomárico Hernández",
-      "image" : "https://sdpomaricoh.github.io/img/profile-img.jpg",
+      "image" : "https://sergiopomarico.com/img/profile-img.jpg",
       "telephone": "+573015660438",
-      "address": "Calle 73 # 67 - 43",
-      "priceRange": "4-8 USD per hour",
+      "priceRange": "10 USD per hour",
       "contactPoint": [
         { "@type": "ContactPoint",
           "telephone": "+573015660438",
@@ -64,5 +43,5 @@ layout: compress
       ]
     }
 	</script>
-  </body>
+</body>
 </html>

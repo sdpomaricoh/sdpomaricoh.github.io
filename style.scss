@@ -5,6 +5,8 @@
 // IMPORTS
 //
 @import "variables";
+@import "icons";
+@import "animations";
 
 /* --------------------------------- */
 /*            Css Styles             */
@@ -32,20 +34,18 @@
 
 
 ------------------------ 1 Body and Core CSS ------------------------*/
-
-html {
-  position: relative;
-  min-height: 100%;
+*:focus {
+  outline: 0;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  background: url(../img/bg.png) #fafafa center fixed !important;
+  background: url(../img/bg.png) $bg center fixed;
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   &:focus,
   &:active {
     text-decoration: none;
@@ -53,25 +53,28 @@ a {
   }
 }
 
-p {
-  font-size: 14px;
-}
-
-*:focus {
-  outline: 0;
-}
-
 main {
-  margin: 60px 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-gap: 1.875rem;
+  margin: 3.75rem auto;
+  max-width: 1140px;
+}
+
+nav {
+  width: 100%;
+  background: $white;
+  box-shadow: $shadow;
 }
 
 ul {
-  padding-left: 0 !important;
+  padding-left: 0;
+  margin: 0;
 }
 
-/*preloader*/
+p {
+  font-size: 0.875rem;
+}
 
 #preloader {
   align-items: center;
@@ -81,70 +84,16 @@ ul {
   justify-content: center;
   left: 0;
   position: fixed;
+  opacity: 0;
   top: 0;
+  transition: all ease-in-out 750ms;
   width: 100%;
-  z-index: 99;
+  z-index: -1;
 }
 
-.sk-folding-cube {
-  margin: 20% auto;
-  width: 60px;
-  height: 60px;
-  position: relative;
-  transform: rotateZ(45deg);
-  .sk-cube {
-    float: left;
-    width: 50%;
-    height: 50%;
-    position: relative;
-    transform: scale(1.1);
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $white;
-      animation: sk-foldCubeAngle 2.4s infinite linear both;
-      transform-origin: 100% 100%;
-    }
-  }
-  .sk-cube2 {
-    transform: scale(1.1) rotateZ(90deg);
-    &:before {
-      animation-delay: 0.3s;
-    }
-  }
-
-  .sk-cube3 {
-    transform: scale(1.1) rotateZ(180deg);
-    &:before {
-      animation-delay: 0.6s;
-    }
-  }
-
-  .sk-cube4 {
-    transform: scale(1.1) rotateZ(270deg);
-    &:before {
-      animation-delay: 0.9s;
-    }
-  }
-}
-
-@keyframes sk-foldCubeAngle {
-  0%, 10% {
-    transform: perspective(140px) rotateX(-180deg);
-    opacity: 0;
-  }
-  25%, 75% {
-    transform: perspective(140px) rotateX(0deg);
-    opacity: 1;
-  }
-  90%, 100% {
-    transform: perspective(140px) rotateY(180deg);
-    opacity: 0;
-  }
+.show {
+  opacity: 1 !important;
+  z-index: 99 !important;
 }
 
 /*------------------------ 2 Profile ------------------------*/
@@ -162,25 +111,28 @@ ul {
   background: $white;
   box-shadow: $shadow;
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
   }
   .social-icons {
-    padding: 20px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     a {
-      font-size: 12px;
-      color: $lightGray;
+      align-items: center;
       border: solid 1px $lightGray;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
       border-radius: 50%;
-      width: 34px;
-      display: inline-block;
-      padding: 8px 0;
-      margin-right: 5px;
-      text-align: center;
+      color: $lightGray;
+      display: flex;
+      font-size: 0.8rem;
+      height: 2.25rem;
+      justify-content: center;
+      width: 2.25rem;
       &:hover {
         transition: all ease-in-out 0.5s;
+        border-color: $indigo;
+        color: $white;
       }
     }
   }
@@ -188,457 +140,59 @@ ul {
 
 .name-job {
   padding: 1.6em 0;
-  border-bottom: 1px dashed #cccccc;
+  border-bottom: 1px dashed $border;
 }
 
 .job {
-  color: #c1c1c1;
+  color: $lightenGray;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 /*------------------------ 3  Menu ------------------------*/
 
-ul.menu {
-  width: 100%;
-  background: #fff;
-  padding-left: 0;
-  display: inline-block;
-  box-shadow: $shadow;
-  li {
-    list-style: none;
-    float: left;
-    width: 25%;
-    text-align: center;
-    border-right: 1px dashed #cccccc;
-    &:last-child {
-      border-right: 0;
-    }
-    a {
-      color: $black;
-      padding: 45px 0 40px 0;
-      display: inline-block;
-      line-height: 30px;
-      display: block;
-      &:hover {
-        transition: all ease-in-out 0.5s;
-      }
-      i {
-        font-size: 30px;
-      }
-    }
-  }
-}
-
-/*------------------------ 4 Content ------------------------*/
-
-.content {
-  background: #fff;
-  margin-top: 30px;
-  box-shadow: $shadow;
-}
-
-.page-title {
-  border-bottom: 1px dashed #cccccc;
-  padding: 30px;
-
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-  }
-}
-
-.page {
-  padding-top: 30px;
-  padding-bottom: 90px;
-  display: inline-block;
-  min-height: 430px;
-}
-
-.section-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  left: 0;
-  border-top: 1px dashed #cccccc;
-  p {
-    color: #b4b4b4;
-    font-size: 13px;
-  }
-}
-/*------------------------ 5 About Page ------------------------*/
-
-.page ul.info-list li {
-  list-style: none;
-  font-size: 14px;
-  line-height: 35px;
-  span {
-    color: #7f7f7f;
-  }
-}
-
-ul.skill-list {
-  h3 {
-    display: block;
-    margin-bottom: 0;
-    font-size: 14px;
-    color: #000;
-    font-weight: bold;
-  }
-  li {
-    list-style: none;
-  }
-}
-
-.progress {
-  margin: 15px 0;
-  display: block;
-  height: 6px;
-  position: relative;
-  width: 100%;
-  overflow: visible;
-  border-radius: 50px;
-  background: #ffffff;
-  box-shadow: 0;
-  .percentage {
-    border-radius: 50px 0 0 50px;
-    bottom: 0;
-    position: absolute;
-    top: 0;
-  }
-}
-
-.about-text {
-  margin-top: 60px;
-  p {
-    color: #7f7f7f;
-    line-height: 24px;
-    font-size: 14px;
-  }
-}
-
-.services {
-  margin-top: 60px;
-  display: inline-block;
-  .service {
-    margin-bottom: 30px;
-    i {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      cursor: pointer;
+.menu {
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      flex: 1;
+      list-style: none;
       text-align: center;
-      display: inline-block;
-      padding: 6px;
-      float: left;
-      color: #fff;
-      font-size: 30px;
-      margin-right: 10px;
-    }
-    p {
-      font-size: 14px;
-      color: #7f7f7f;
-    }
-    span {
-      padding-top: 6px;
-      display: inline-block;
-      line-height: 20px;
-      font-size: 16px;
-    }
-  }
-}
-/*------------------------ 6 Resume Page ------------------------*/
-
-.resume-education {
-  margin-bottom: 30px;
-}
-
-.rounded-icon i {
-  width: 55px;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 15px;
-  color: #fff;
-  border-radius: 50%;
-}
-
-.resume-out {
-  padding-left: 25px;
-}
-
-.resume-info {
-  border-left: 2px solid #e5e5e5;
-  padding: 0 0 10px 30px;
-  p {
-    color: #7f7f7f;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-
-.info-title {
-  font-weight: 600;
-  font-size: 16px;
-  margin-top: 0;
-  &:after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    float: left;
-    border-radius: 50px;
-    margin: 0px 9px 0 -36px;
-  }
-  &:first-child {
-    padding-top: 50px;
-  }
-  &:last-child {
-    border: 0;
-    &:after {
-      margin: 0px 9px 0 -34px;
+      border-right: 1px dashed $border;
+      &:last-child {
+        border-right: 0;
+      }
+      a {
+        color: $black;
+        padding: 45px 0;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+          transition: all ease-in-out 0.5s;
+          color: $white;
+        }
+        i {
+          font-size: 2rem;
+        }
+        span {
+          margin-top: 1rem;
+        }
+      }
     }
   }
 }
 
-.info-date {
-  font-size: 14px;
-  padding: 6px 0;
-  display: block;
-}
-
-/*------------------------ 7 Portfolio Page ------------------------*/
-.portfolio_filter {
-  margin-top: 20px;
-  li {
-    float: left;
-    list-style: none;
-    cursor: pointer;
-    font-size: 14px;
-    margin-right: 20px;
-    color: #c1c1c1;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-}
-.portfolio_items {
-  margin-bottom: 20px;
-  min-width: 400px;
-  margin: 45px 15px;
-  .single_item {
-    margin-bottom: 30px;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.work-overlay {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  padding: 25px;
-  width: 100%;
-  height: 100%;
-  padding-top: 32%;
-  opacity: 0;
-  transition: all 0.5s ease;
-  h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  a.link {
-    background: #fff;
-    margin: 0 auto;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    padding-top: 12px;
-    margin-top: 24px;
-    margin-right: 7px;
-    transition: all 0.5s ease;
-    transform: translateY(200px);
-    border-radius: 30px;
-    color: #000000 !important;
-  }
-  a.lightbox {
-    background: #fff;
-    margin: 0 auto;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    padding-top: 12px;
-    margin-top: 24px;
-    transition: all 0.5s ease;
-    transform: translateY(200px);
-    border-radius: 30px;
-    color: #000000 !important;
-  }
-}
-
-.work-inner {
-  position: relative;
-  overflow: hidden;
-  &:hover > .work-overlay {
-    background: rgba(0, 0, 0, 0.63);
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  &:hover > .work-overlay a.link {
-    color: #fff;
-    transform: translateY(0px);
-    transition: all 0.1s ease;
-    transition-duration: 0.3s;
-  }
-  &:hover > .work-overlay a.lightbox {
-    color: #fff;
-    background: #fff;
-    transform: translateY(0px);
-    transition: all 0.1s ease;
-    transition-duration: 0.6s;
-  }
-}
-
-.work-detail {
-  margin-bottom: 30px;
-  p {
-    color: #7f7f7f;
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 21px;
-  }
-}
-
-.works-image {
-  margin-bottom: 30px;
-  img {
-    width: 100%;
-  }
-}
-
-/*------------------------ 10 Responsive ------------------------*/
-
-@media screen and (max-width: 991px) {
-  .profile {
-    margin-bottom: 30px;
-  }
-
-  .my-skills {
-    margin-top: 30px;
-  }
-
-  .contact-info {
-    margin-top: 30px;
-  }
-}
+/*------------------------ 8 Responsive ------------------------*/
 
 /*Max Width 767px */
 @media screen and (max-width: 767px) {
-  .profile {
-    margin-bottom: 30px;
+  main {
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+    width: 95%;
   }
-
-  .my-skills {
-    margin-top: 30px;
-  }
-
-  .services .service span {
-    width: 100%;
-    text-align: center;
-  }
-
-  .services .service {
-    text-align: center;
-  }
-
-  .services .service i {
-    float: none;
-  }
-  .indigo-button {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  ul.menu li i {
-    font-size: 23px;
-  }
-
-  ul.menu li a {
-    padding: 27px 0 23px 0;
-  }
-
-  #wrapper {
-    margin: 15px 0;
-  }
-
-  .page-title {
-    border-bottom: 1px dashed #cccccc;
-    padding: 30px;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
-
-  .portfolio_filter li {
-    float: none;
-    text-align: center;
-    width: 100%;
-  }
-
-  .portfolio_filter {
-    width: 100%;
-    margin-top: 15px;
-    line-height: 26px;
-  }
-
-  .user-img {
+  .icon-text {
     display: none;
   }
-
-  .portfolio_items .single_item img {
-    max-width: 300px;
-  }
-
-  .work-overlay {
-    padding: 10px;
-  }
-
-  .portfolio_items {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .single_item {
-    padding: 0;
-  }
 }
-
-// 404 styles
-.error {
-  text-align: center;
-  h1 {
-    text-transform: uppercase;
-    color: $indigo;
-  }
-  p {
-    font-size: 16px;
-    color: #7f7f7f;
-  }
-}
-
-//
-// IMPORTS
-//
-@import "theme";
