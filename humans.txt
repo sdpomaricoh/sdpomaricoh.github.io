@@ -1,6 +1,6 @@
 /* TEAM */
 Web Developer: Sergio Pomárico Hernández
-Site: http://www.sdpomaricoh.github.io/
+Site: http://www.sergiopomarico.com/
 Twitter: [at]sergio_pomarico
 Location: Medellí­n, Antioquia, Colombia.
 
@@ -13,6 +13,6 @@ Name: Malvina Hernández Lobo
 Last update: 2020/01/20
 Standards: HTML5, CSS3, JavaScript
 
-Components: Github, Bootstrap
+Components: Github
 
-Software: Atom
+Software: VS Code

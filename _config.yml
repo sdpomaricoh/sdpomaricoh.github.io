@@ -6,7 +6,7 @@
 name: Sergio Pomárico
 
 # Short bio or description (displayed in the header)
-description: Soy desarrollador Web Full Stack en tecnologías JavaScript en la Ciudad de Medellín, Realizo desarrollos en Laravel, NodeJS, Angular, ReactJS y Wordpress.
+description: Soy desarrollador JavaScript en la Ciudad de Medellín, realizo desarrollos en JavaScript, NodeJS, ReactJS, React Native y Flutter.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: img/profile-img.jpg
@@ -20,7 +20,7 @@ google_analytics: UA-41051102-4
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://sdpomaricoh.github.io
+url: http://sergiopomarico.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

@@ -1,0 +1,58 @@
+.page-title h2 {
+	color: $indigo;
+}
+
+ul.menu li .selected{
+	color: $indigo;
+}
+
+.skill-list .progress{
+  border: 1px solid  $indigo;
+}
+
+.skill-list .progress .percentage {
+  background-color:  $indigo;
+}
+
+.services .service i{
+  background: $indigo;
+}
+
+.rounded-icon {
+	background: $indigo;
+}
+
+.info-title:after {
+  background: $indigo;
+}
+
+.info-date{
+  color: $indigo;
+}
+
+.select-cat{
+	color: $indigo !important;
+}
+
+.but-big{
+	background-color:  $indigo;
+}
+
+ul.menu li .selected{
+	color: $indigo;
+}
+
+.date a {
+	color:$indigo;
+}
+
+a.reply {
+	color:$indigo;
+}
+
+a{
+	color: #7F7F7F;
+	&:hover{
+		color: $indigo;
+	}
+}

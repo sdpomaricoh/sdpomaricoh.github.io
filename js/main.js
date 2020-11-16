@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('preloader').classList.remove('show');
   }, 1000);
 
+  // Add current year to footer
+  const dates = document.querySelectorAll('.year');
+  const year = new Date();
+  dates.forEach((date) => {
+    date.innerHTML = year.getFullYear();
+  });
+
   var menuItems = document.querySelectorAll('.menu-item');
   menuItems.forEach((item) => {
     item.addEventListener('click', function () {
